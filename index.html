@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Secret Message</title>
+  <title> Happy birthday</title>
   <style>
     body {
       display: flex;
@@ -15,27 +15,44 @@
       font-size: 3em;
       padding: 0 5%;
       box-sizing: border-box;
+      text-align: center;        /* 整体居中 */
     }
     .container {
       width: 100%;
-      max-width: 600px;  /* 控制宽度 */
+      max-width: 600px;
+      position: relative;
+    }
+    .bat-logo {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 50px;
     }
     .text {
-      text-align: left;
-      line-height: 1.4em;  /* 行间距更舒适 */
+      line-height: 1.4em;
+    }
+    .first-line {
+      white-space: nowrap;  /* 强制不换行 */
+      display: block;
     }
     .signature {
-      text-align: right;
-      margin-top: 1em;      /* 签名和正文保持距离 */
-      font-size: 0.8em;     /* 签名稍小 */
-      color: #ccc;          /* 签名颜色更淡 */
+      margin-top: 1em;
+      font-size: 0.8em;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- 蝙蝠侠小徽标 -->
+    <svg class="bat-logo" viewBox="0 0 24 24" fill="#eee" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2L15 8H9L12 2ZM2 12L8 15V9L2 12ZM22 12L16 9V15L22 12ZM12 22L9 16H15L12 22Z"/>
+    </svg>
+
     <div class="text">
-      🦇 Gotham is safe tonight… and so is Lindevej.<br>
+      <span class="first-line">🦇 Gotham is safe tonight… and so is Lindevej.</span><br>
       Happy Birthday!
     </div>
     <div class="signature">
