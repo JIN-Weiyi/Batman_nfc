@@ -6,24 +6,41 @@
   <style>
     body {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: center;   /* 水平居中整个容器 */
+      align-items: center;       /* 垂直居中 */
       height: 100vh;
       font-family: Arial, sans-serif;
-      background-color: #111;   /* 深色背景 */
-      color: #eee;              /* 浅色文字 */
-      font-size: 3em;           /* 字体大 */
-      text-align: center;
-      padding: 0 5%;            /* 左右间距 */
+      background-color: #111;
+      color: #eee;
+      font-size: 3em;
+      padding: 0 5%;
       box-sizing: border-box;
-      line-height: 1.2em;       /* 行间距 */
+    }
+    .container {
+      width: 100%;
+      max-width: 600px;  /* 控制宽度 */
+    }
+    .text {
+      text-align: left;
+      line-height: 1.4em;  /* 行间距更舒适 */
+    }
+    .signature {
+      text-align: right;
+      margin-top: 1em;      /* 签名和正文保持距离 */
+      font-size: 0.8em;     /* 签名稍小 */
+      color: #ccc;          /* 签名颜色更淡 */
     }
   </style>
 </head>
 <body>
-  🦇 Gotham is safe tonight…<br>
-  and so is Lindevej.<br>
-  Happy Birthday!<br>
-  — Weiyi
+  <div class="container">
+    <div class="text">
+      🦇 Gotham is safe tonight… and so is Lindevej.<br>
+      Happy Birthday!
+    </div>
+    <div class="signature">
+      — Weiyi
+    </div>
+  </div>
 </body>
 </html>
